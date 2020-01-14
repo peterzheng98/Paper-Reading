@@ -1,7 +1,6 @@
 # Deep Dyna-Q: Integrating Planning for Task-Completion Dialogue Policy Learning
 
-### ACL 2018
-Baolin Peng, Xiujun Li, Jianfeng Gao, Jingjing Liu, Kam-Fai Wong, Shang-Yu Su
+### ACL 2018 - Baolin Peng, Xiujun Li, Jianfeng Gao, Jingjing Liu, Kam-Fai Wong, Shang-Yu Su
 
 ## Core Ideas:
 - DDQ: Dialogue Policy Learning via Deep Dyna-Q
@@ -16,5 +15,5 @@ Baolin Peng, Xiujun Li, Jianfeng Gao, Jingjing Liu, Kam-Fai Wong, Shang-Yu Su
 3 Stage training:   
 - Direct Reinforcement Learning
 - World Model Learning
-- Planning
-!(https://github.com/peterzheng98/paper-reading/blob/master/NLP/pictures/a1.png?raw=true)
+- Planning  
+![Basic Process](https://github.com/peterzheng98/paper-reading/blob/master/NLP/pictures/a1.png?raw=true)  
