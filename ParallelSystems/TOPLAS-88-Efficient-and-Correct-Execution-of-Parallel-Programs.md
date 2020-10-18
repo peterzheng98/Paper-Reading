@@ -25,3 +25,9 @@ Tag: Theory, Parallel Languages.
 2. (Total/Linear Order) Every two distinct elements are ordered.
 3. (Orientation) E is an orientation if uCv => uEv or vEu. (C is a symmetric relation)
 4. (Proper Orientation) E is an acyclic orientation of C. (C is a symmetric relation)
+5. (Closed): The relaion P is closed under A if uPv, uAu', vAv', not uAv => v'Pv'. 
+    - P: irreflexive relation, A: equivalence relation on the same set U
+    - P/A: the irreflexive relation induced by P on the family U/A of equivalence classes of A: u P/A v if (1) u != v, (2) there exists u in U and v in V => uPv.
+    - P transitive => P/A transitive
+6. (Closed) P is closed under A iff for any u, v: $[u]P/A[v] \Rightarrow uPv$
+7. (Lexicographic Product) $P = P_1 \times P_2:\ uPv \text{  if  } (1)\neg uAv\land [u]P_1[v]\text{ or }(2)uAv\land [u]P_2[v]$
