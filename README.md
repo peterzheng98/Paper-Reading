@@ -1,8 +1,4 @@
 # Paper-Reading
 
-## Security
-- Devign: Effective Vulnerability Identification by Learning Comprehensive Program Semantics via Graph Neural Networks
-
-## NLP:
-- Dialogue
-  - Deep Dyna-Q: Integrating Planning for Task-Completion Dialogue Policy Learning
+## Parallel Systems
+- TOPLAS 1988: Efficient and Correct Execution of Parallel Programs that Share Memory
