@@ -30,4 +30,14 @@ Tag: Theory, Parallel Languages.
     - P/A: the irreflexive relation induced by P on the family U/A of equivalence classes of A: u P/A v if (1) u != v, (2) there exists u in U and v in V => uPv.
     - P transitive => P/A transitive
 6. (Closed) P is closed under A iff for any u, v: $[u]P/A[v] \Rightarrow uPv$
-7. (Lexicographic Product) $P = P_1 \times P_2:\ uPv \text{  if  } (1)\neg uAv\land [u]P_1[v]\text{ or }(2)uAv\land [u]P_2[v]$
+7. (Lexicographic Product) $P = P_1 \times P_2:\ uPv \text{  if  } (1)\neg uAv\land [u]P_1[v]\text{ or }(2)uAv\land uP_2v$ where $P_1$ is an irreflexive relation on $U/A$ and $P_2\subseteq A$ is an irreflexive relation within the equivalence classes of $A$.
+    - If $P_1, P_2$ are both partial orders, their lexicographic product is a partial order.
+8. (Closed) $P$ is closed under $A$ iff $P=P/A\times P \cap A$.
+9. (Extended to Total Ordering) A relation can be extended to a total ordering iff its transitive closure is irreflexive.
+10. (Consistent) Two relations $P$ and $R$ are consistent if $P\cup R$ can be extended to a total ordering.
+    - $P$ is consistent with $R$ iff the graph of the relation $P\cup R$ has no cycles.
+11. (Lemma) Let $A$ be an equivalence relation, $P$ be a partial order, and $E$ be a relation on the same set. Then the following assertions are equivalent:
+    - $E$ is consistent with $P$ and $A$.
+    - (i) $E$ is consistent with $P$, and (ii) $E/A$ is consistent with $P/A$.
+    - (i) $E\cap A$ is consistent with $P\cap A$, and (ii) $E/A$ is consistent with $P/A$.
+    - (i) $(E\cap A) \cup (P\cap A)$ has no cycles, and (ii) all cycles of $E\cup A\cup P$ are contained in $A$.
