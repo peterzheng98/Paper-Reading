@@ -41,3 +41,7 @@ Tag: Theory, Parallel Languages.
     - (i) $E$ is consistent with $P$, and (ii) $E/A$ is consistent with $P/A$.
     - (i) $E\cap A$ is consistent with $P\cap A$, and (ii) $E/A$ is consistent with $P/A$.
     - (i) $(E\cap A) \cup (P\cap A)$ has no cycles, and (ii) all cycles of $E\cup A\cup P$ are contained in $A$.
+
+### Model
+Characterize the code by a tuple $<V, A, P, C>$.
+    - $V$ is the set of variable accesses executed by the program.
