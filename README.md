@@ -2,3 +2,4 @@
 
 ## Parallel Systems
 - TOPLAS 1988: Efficient and Correct Execution of Parallel Programs that Share Memory
+- Stability in Weak Memory Models
