@@ -25,6 +25,7 @@ Tag: Weak Memory Model
     - Define write serialisation and from read is global. (In TSO, but in ARM maybe not).
 3. Validaity:
     - Condition:
-        - Uniproc: acyclic: (read-from, from-read, write-serialisation, program-order-restricted).
-        - Thin: acyclic: (read-from, dependencies)
+        - Uniproc: Union of (read-from, from-read, write-serialisation, program-order-restricted).
+        - Thin: Union of (read-from, dependencies)
         - Global Happens-Before: Union of (write-serialisation, from-read, preseved program order, global read-from, barriers in the global relation)
+    - Validaity: Subcondition all acyclic.
