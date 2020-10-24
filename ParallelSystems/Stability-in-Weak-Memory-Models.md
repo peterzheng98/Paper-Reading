@@ -38,5 +38,6 @@ Tag: Weak Memory Model
     \text{covered}_{c,s}(E,X)\triangleq \forall xy, x\xrightarrow{c} y\Rightarrow x \xrightarrow{s} y \vee y \xrightarrow{s} x
 $
 4. Covering: Ordering by $\xrightarrow{s}$ the conflicting accesses of an execution (E, X) valid on $A_1$ guarantees its validity on $A_2$.
-    - The synchronisation is enough for a stronger architecture.
-    
+    - **The added synchronisation is enough for a stronger architecture.**
+    - $\text{covering}({\xrightarrow{c},\xrightarrow{s}})\triangleq \forall EX, (A_1.\text{Valid}(E,X)\wedge \text{covered}_{c,s}(E,X))\Rightarrow A_2.\text{Valid}(E,X)$
+5. 
