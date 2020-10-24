@@ -28,4 +28,10 @@ Tag: Weak Memory Model
         - Uniproc: Union of (read-from, from-read, write-serialisation, program-order-restricted).
         - Thin: Union of (read-from, dependencies)
         - Global Happens-Before: Union of (write-serialisation, from-read, preseved program order, global read-from, barriers in the global relation)
-    - Validaity: Subcondition all acyclic.
+    - Validaity: Subcondition all **acyclic**.
+
+## Covering relations:
+1. Stable Condition: The code on a weak architecture $A_1$ is valid on the stronger architecture $A_2$, which we call **stability from $A_1$ to $A_2$**.
+2. Synchronisation Idioms: Ensure that one out of two conflicting accesses occurs before the other.
+    - Can be formalised with an irreflexive conflict relation.(relation $\xrightarrow{c}$ over $\mathbb{E}$ s.t. $\forall xy, x\xrightarrow{c} y\Rightarrow \neg (y\xrightarrow{po} x$)
+3. Covered: 
