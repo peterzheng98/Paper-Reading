@@ -33,5 +33,10 @@ Tag: Weak Memory Model
 ## Covering relations:
 1. Stable Condition: The code on a weak architecture $A_1$ is valid on the stronger architecture $A_2$, which we call **stability from $A_1$ to $A_2$**.
 2. Synchronisation Idioms: Ensure that one out of two conflicting accesses occurs before the other.
-    - Can be formalised with an irreflexive conflict relation.(relation $\xrightarrow{c}$ over $\mathbb{E}$ s.t. $\forall xy, x\xrightarrow{c} y\Rightarrow \neg (y\xrightarrow{po} x$)
-3. Covered: 
+    - Can be formalised with an irreflexive conflict relation.(relation $\xrightarrow{c}$ over $\mathbb{E}$ s.t. $\forall xy, x\xrightarrow{c} y\Rightarrow \neg y\xrightarrow{po} x$)
+3. Covered: $
+    \text{covered}_{c,s}(E,X)\triangleq \forall xy, x\xrightarrow{c} y\Rightarrow x \xrightarrow{s} y \vee y \xrightarrow{s} x
+$
+4. Covering: Ordering by $\xrightarrow{s}$ the conflicting accesses of an execution (E, X) valid on $A_1$ guarantees its validity on $A_2$.
+    - The synchronisation is enough for a stronger architecture.
+    
