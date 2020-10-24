@@ -23,4 +23,8 @@ Tag: Weak Memory Model
     - **A processor may read a past value.**
     - Model this by some subrelation of read-from edge being non-global.
     - Define write serialisation and from read is global. (In TSO, but in ARM maybe not).
-
+3. Validaity:
+    - Condition:
+        - Uniproc: acyclic: (read-from, from-read, write-serialisation, program-order-restricted).
+        - Thin: acyclic: (read-from, dependencies)
+        - Global Happens-Before: Union of (write-serialisation, from-read, preseved program order, global read-from, barriers in the global relation)
